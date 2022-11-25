@@ -10,13 +10,13 @@ pipeline{
             }       
                   
         }
-        stage("Hello Worls"){
+        stage("Hello World1"){
             steps{
                 sh "echo Hello World"
                 sh "echo ENV_URL is ${ENV_URL}"
             }
         }
-        stage("Hello Worls"){
+        stage("Hello World2"){
             environment {
                 ENV_URL = "stage.krishan.com"
             }
