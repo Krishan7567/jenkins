@@ -13,7 +13,7 @@ pipeline{
         stage("Hello Worls"){
             steps{
                 sh "echo Hello World"
-                sh "echo ENV_URL is $ {ENV_URL}"
+                sh "echo ENV_URL is ${ENV_URL}"
             }
         }
         stage("Hello Worls"){
