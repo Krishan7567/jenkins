@@ -3,6 +3,10 @@ pipeline{
     environment {
         ENV_URL = "pipeline.google.com"
     }
+    options {
+        disableConcurrentBuilds()
+        timeout(time: 1, unit: 'MINUTES')
+    }
     stages{
         stage("Hello Worls"){
             steps{
