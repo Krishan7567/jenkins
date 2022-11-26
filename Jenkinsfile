@@ -12,6 +12,9 @@ pipeline{
             maven 'maven-3.5.0'
     }
     stages{
+        stage('parallel'){
+            parallel {
+            
         stage("Hello Worls"){
             steps{
                 sh "echo Hello World1"
@@ -34,6 +37,8 @@ pipeline{
                 sh "echo ENV_URL is ${ENV_URL}"
 
 }
+        }
+            }
         }
     }
 }
