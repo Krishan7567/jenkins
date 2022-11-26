@@ -1,5 +1,6 @@
 pipeline{
     agent any 
+    triggers { pollSCM('*/2 * * * *') }
     environment {
         ENV_URL = "pipeline.google.com"
     }
