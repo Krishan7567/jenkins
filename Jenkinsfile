@@ -18,6 +18,7 @@ pipeline{
         stage("Hello Worls"){
             steps{
                 sh "echo Hello World1"
+                sh "echo hello team"
                 
             }       
                   
